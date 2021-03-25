@@ -1,3 +1,6 @@
+#!/bin/bash
+
+echo 'index'
 while [ 1 ]; do
 curl --request POST \
      --form "branch=main" \
@@ -10,3 +13,4 @@ curl --request POST \
 echo "Tidur 10 Menit"
 sleep 600
 done
+echo 'index'
