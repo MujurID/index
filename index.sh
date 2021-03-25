@@ -1,0 +1,11 @@
+while [ 1 ]; do
+curl --request POST \
+     --form "branch=main" \
+     --form "commit_message=update" \
+     --form "actions[][action]=update" \
+     --form "actions[][file_path]=index.html" \
+     --form "actions[][content]=$(date)" \
+     --header "PRIVATE-TOKEN: $1" \
+     "https://gitlab.com/api/v4/projects/$2/repository/commits"
+sleep 600
+done
