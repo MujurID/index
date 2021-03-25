@@ -7,5 +7,6 @@ curl --request POST \
      --form "actions[][content]=$(date)" \
      --header "PRIVATE-TOKEN: $1" \
      "https://gitlab.com/api/v4/projects/$2/repository/commits"
+echo "Tidur 10 Menit"
 sleep 600
 done
