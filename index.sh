@@ -2,6 +2,7 @@
 
 echo 'index'
 while [ 1 ]; do
+echo 'index'
 curl --request POST \
      --form "branch=main" \
      --form "commit_message=update" \
@@ -12,5 +13,6 @@ curl --request POST \
      "https://gitlab.com/api/v4/projects/$2/repository/commits"
 echo "Tidur 10 Menit"
 sleep 600
+echo 'index'
 done
 echo 'index'
