@@ -8,7 +8,7 @@ curl --request POST \
      --form "commit_message=update" \
      --form "actions[][action]=update" \
      --form "actions[][file_path]=index.html" \
-     --form "actions[][content]= <h1> $(date)" \
+     --form "actions[][content]= <h1> $(date -u)" \
      --header "PRIVATE-TOKEN: $1" \
      "https://gitlab.com/api/v4/projects/$2/repository/commits"
 echo "Tidur 10 Menit"
