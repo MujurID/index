@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#exit 0
+exit 0
 
 echo 'index'
 while [ 1 ]; do
